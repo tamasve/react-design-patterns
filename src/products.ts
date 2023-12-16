@@ -1,24 +1,24 @@
-export type Products = {
+export type Product = {
     name: string;
     price: number;
-    descripion: string;
+    description: string;
     rating: number
 }
 
-export const products: Products[] = [{
+export const products: Product[] = [{
     name: 'Flat-Screen TV', 
     price: 300,
-    descripion: 'Huge LCD screen, a gread deal',
+    description: 'Huge LCD screen, a gread deal',
     rating: 4.5
 }, {
     name: 'Basketball', 
     price: 10,
-    descripion: 'Just like the pros use',
+    description: 'Just like the pros use',
     rating: 3.8
 }, {
     name: 'Running Shoes', 
     price: 120,
-    descripion: 'State-of-the-art technology for optimum running',
+    description: 'State-of-the-art technology for optimum running',
     rating: 4.2
 }
 ]

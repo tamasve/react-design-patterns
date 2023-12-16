@@ -1,3 +1,4 @@
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -10,7 +11,10 @@ const Pane = styled.div<{$weight: number}>`
 
 export const SplitScreenIII = ({
     children,
-    leftWeight = 1
+    weights
+}: {
+    children: ReactNode[],
+    weights: number[]
 }) => {
 
     // any number of components! - but how can I hand over the flex weights?
@@ -18,12 +22,10 @@ export const SplitScreenIII = ({
         <Container>
             {children.map((key, value) => 
                 (
-                    <Pane key={key} $weight={leftWeight}>
-                        {value}
+                    <Pane key={value} $weight={weights[value]}>
+                        {key}
                     </Pane>
                 ))}
         </Container>
     );
 }
-
-// here no parameter handling is necessary...

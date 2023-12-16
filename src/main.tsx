@@ -12,5 +12,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 /**
  * React Design Patterns tutorial by Coding with Mr.M
  * Practice
- * 16 Dec 2023
+ * 15-16 Dec 2023
+ * Layout Components 26:30
  */
