@@ -4,7 +4,9 @@
 
 * Layout Components
 * Controlled vs Uncontrolled Components
-
+* Custom Hooks
+* Functional programming
+* Higher order components
 
 
 ## "Coding with Mr.M" tutorial
