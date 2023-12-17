@@ -1,4 +1,4 @@
-import {Person} from '../people'
+import {Person} from './people'
 
 export const SmallPersonListItem = ({person}: {person: Person}) => {
 

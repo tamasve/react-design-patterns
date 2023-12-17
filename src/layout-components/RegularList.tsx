@@ -1,5 +1,6 @@
-import { Person } from "../people";
-import { Product } from "../products";
+import { FC } from "react";
+import { Person } from "../people/people";
+import { Product } from "../products/products";
 
 export const RegularList = ({
     items,
@@ -8,7 +9,7 @@ export const RegularList = ({
 }: {
     items: Person[] | Product[],
     resourceName: string,
-    itemComponent: React.Component
+    itemComponent: FC
 }) => 
 {
     return (

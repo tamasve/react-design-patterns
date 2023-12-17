@@ -1,12 +1,14 @@
 import './App.css';
 import LayoutComponents from './LayoutComponents';
+import UncontrolledControlledComp from './UncontrolledControlledComp';
 
 
 function App() {
 
     return (
         <>
-            <LayoutComponents />
+            {/* <LayoutComponents /> */}
+            <UncontrolledControlledComp />
         </>
     )
 }

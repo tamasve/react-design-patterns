@@ -21,6 +21,8 @@ const ModalBody = styled.div`
     border-radius: 10px;
 `;
 
+// This Modal is Uncontrolled... no parent can manipulate it...
+
 export const Modal = ({ caption, children }: { caption: string, children: ReactNode }) => {
 
     const [shouldShow, setShouldShow] = useState(false);
