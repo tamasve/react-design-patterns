@@ -8,7 +8,7 @@ import axios from 'axios';
 
 export const withUser = (Component: FunctionComponent, userId: string) => {
 
-    return props => {
+    return (props: {name: string, age: number, hairColor: string}) => {
         const [user, setUser] = useState(null);
 
         useEffect(() => {

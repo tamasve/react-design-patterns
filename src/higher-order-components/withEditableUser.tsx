@@ -5,14 +5,14 @@ import axios from 'axios';
 
 export const withEditableUser = (Component: FunctionComponent, userId: string) => {
     
-    return props => {
+    return (props: {name: string, age: number, hairColor: string}) => {
 
         const [originalUser, setOriginalUser] = useState<object>({});
         const [user, setUser] = useState<object>({});
         
         useEffect(() => {
             (async () => {
-                const response = axios.get(`/users/${userId}`);
+                const response = await axios.get(`/users/${userId}`);
                 setOriginalUser(response.data);
                 setUser(response.data);
             })();

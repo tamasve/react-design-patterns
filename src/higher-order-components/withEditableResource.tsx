@@ -16,7 +16,7 @@ export const withEditableResource = (Component: FunctionComponent, resourcePath:
         
         useEffect(() => {
             (async () => {
-                const response = axios.get(resourcePath);
+                const response = await axios.get(resourcePath);
                 setOriginalData(response.data);
                 setData(response.data);
             })();
