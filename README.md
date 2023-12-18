@@ -7,7 +7,8 @@
 * Custom Hooks
 * Functional programming
 * Higher order components
-
++
+* Compound components - here: https://www.youtube.com/watch?v=vPRdY87_SH0 - at 12:30  (ProductCard.Image = ProductImage, in ProductCard component)
 
 ## "Coding with Mr.M" tutorial
 
