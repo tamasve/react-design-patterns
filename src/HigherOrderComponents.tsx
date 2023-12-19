@@ -6,19 +6,19 @@
 import { printProps } from "./higher-order-components/printProps";
 import { LargePersonListItem } from "./people/LargePersonListItems";
 import { UserInfoForm } from "./higher-order-components/UserInfoForm";
-// import { withUser } from "./higher-order-components/withUser";
+import { withUser, withEditableUser } from "./higher-order-components/withUser";
 
-const PersonInfoWrapped = printProps(LargePersonListItem);
+// const PersonInfoWrapped = printProps(LargePersonListItem);
 
-// const UserInfoWithLoader = withUser(LargePersonListItem, '234');
+const UserInfoWithLoader = withUser(LargePersonListItem, '234');
 
 export default function HigherOrderComponents () {
 
     return (
         <>
             {/* <PersonInfoWrapped a={1} b="Hello" c={{name: "Joe"}} /> */}
-            {/* <UserInfoWithLoader /> */}
-            <UserInfoForm />
+            <UserInfoWithLoader />
+            {/* <UserInfoForm /> */}
         </>
     );
 }

@@ -1,4 +1,4 @@
-import { GreenButton, RedButton } from "./functional-programming/Composition";
+import { Button, GreenButton, RedButton } from "./functional-programming/Composition";
 import { RecursiveComponent } from "./functional-programming/RecursiveComponent"
 
 const nestedObject: object = {
@@ -27,8 +27,9 @@ export default function FunctionalProgramming () {
     return (
         <>
             <RecursiveComponent data={nestedObject} />
-            <RedButton text="Composition from Button" />
-            <GreenButton text="Partially applied Button" />
+            <Button size='large' bcolor='black' text="It is the base Button..." color="yellow"/>
+            <RedButton text="Composition from Button" color="white"/>
+            <GreenButton text="Partially applied Button" color="white"/>
         </>
     );
 }

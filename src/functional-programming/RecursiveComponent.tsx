@@ -11,11 +11,9 @@ export const RecursiveComponent = ({data}: {data: object | string}) => {
         }
     
     // recursive case
-    const pairs = Object.entries(data);
-
     return (
         <>
-            {pairs.map(([key, value]) => (
+            {Object.entries(data).map(([key, value]) => (
                 <li>
                     {key}:
                     <ul>

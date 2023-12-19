@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -9,6 +9,7 @@ const Pane = styled.div<{$weight: number}>`
     flex: ${props => props.$weight};
 `;
 
+// it is more flexible if we handle the panels as children of this layout component
 export const SplitScreenIII = ({
     children,
     weights

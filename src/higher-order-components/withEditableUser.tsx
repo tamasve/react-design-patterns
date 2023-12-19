@@ -1,11 +1,12 @@
 import React, { useState, useEffect, FunctionComponent } from 'react';
 import axios from 'axios';
+import { Person } from '../UncontrolledControlledComp';
 
 // a more special HOC: not only request the data for the component (a form) but provides all the functionality (data change, save, reset)
 
 export const withEditableUser = (Component: FunctionComponent, userId: string) => {
     
-    return (props: {name: string, age: number, hairColor: string}) => {
+    return (props: Person) => {
 
         const [originalUser, setOriginalUser] = useState<object>({});
         const [user, setUser] = useState<object>({});
