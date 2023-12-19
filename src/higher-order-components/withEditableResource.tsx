@@ -1,4 +1,4 @@
-import React, { useState, useEffect, FunctionComponent } from 'react';
+import { useState, useEffect, FunctionComponent } from 'react';
 import axios from 'axios';
 
 // withEditableUser HOC - 1 step further, to get it a little bit more generic and usable
@@ -9,7 +9,7 @@ const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
 
 export const withEditableResource = (Component: FunctionComponent, resourcePath: string, resourceName: string) => {
     
-    return props => {
+    return (props: Parameters<typeof Component>) => {
 
         const [originalData, setOriginalData] = useState<object>({});
         const [data, setData] = useState<object>({});
