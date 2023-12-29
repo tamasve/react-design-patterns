@@ -1,7 +1,7 @@
 import './App.css';
-// import FunctionalProgramming from './FunctionalProgramming';
+import FunctionalProgramming from './FunctionalProgramming';
 // import HigherOrderComponents from './HigherOrderComponents';
-import LayoutComponents from './LayoutComponents';
+// import LayoutComponents from './LayoutComponents';
 // import UncontrolledControlledComp from './UncontrolledControlledComp';
 
 
@@ -9,10 +9,10 @@ function App() {
 
     return (
         <>
-            <LayoutComponents />
+            {/* <LayoutComponents /> */}
             {/* <UncontrolledControlledComp /> */}
             {/* <HigherOrderComponents /> */}
-            {/* <FunctionalProgramming /> */}
+            <FunctionalProgramming />
         </>
     )
 }

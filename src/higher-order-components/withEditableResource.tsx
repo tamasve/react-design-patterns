@@ -22,7 +22,7 @@ export const withEditableResource = (Component: FunctionComponent, resourcePath:
             })();
         }, []);
 
-        // function for changing some props in data
+        // function for changing some props in data object
         const onChange = (changes: object) => {
             setData({...data, ...changes});
         }
@@ -39,7 +39,8 @@ export const withEditableResource = (Component: FunctionComponent, resourcePath:
             setData(originalData);
         }
 
-        // "Ninja JS" :) to make different prop names for diff.resources (so that they do not clash in case of nesting...)
+        // THE REQUESTED DATA WITH THE COMPLETE FUNCTIONALITY AS PROPS
+        // "Ninja JS" :) to make different prop names for diff.resources (so that they do not clash if they are nested...)
         const resourceProps = {
             [resourceName]: data,
             [`onChange${capitalize(resourceName)}`]: onChange,

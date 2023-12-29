@@ -21,10 +21,10 @@ export const SplitScreenIII = ({
     // any number of components! - but how can I hand over the flex weights?
     return (
         <Container>
-            {children.map((key, value) => 
+            {children.map((comp, key) => 
                 (
-                    <Pane key={value} $weight={weights[value]}>
-                        {key}
+                    <Pane key={key} $weight={weights[key]}>
+                        {comp}
                     </Pane>
                 ))}
         </Container>

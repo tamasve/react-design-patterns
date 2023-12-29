@@ -1,5 +1,5 @@
 // This Button component will be composed into new components
-export const Button = ({size, bcolor, text, ...props}: object) => {
+export const Button = ({size, bcolor, text, ...props}: {size?: string, bcolor?: string, text?: string, props: object}) => {
     return (
         <button style={{
             padding: size === 'large' ? '32px' : '8px',
@@ -10,7 +10,7 @@ export const Button = ({size, bcolor, text, ...props}: object) => {
         >{text}</button>
     )       // inner ...props: other style attributes (non-listed among params)
             // outer ...props: other non-style attributes
-            // which to choose? in some cases both (this code) will work (JS will reject that does not work)
+            // which to choose? in some cases both (this code) will work (JS will reject those that does not work)
 }
 
 // -- composition --

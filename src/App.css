@@ -8,3 +8,7 @@
 body {
     display: block;
 }
+
+.experiments {
+    flex-direction: row;
+}

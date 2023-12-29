@@ -3,11 +3,11 @@ import { SplitScreenII } from "./layout-components/SplitScreenII";
 import { SplitScreenIII } from "./layout-components/SplitScreenIII";
 import { RegularList } from "./layout-components/RegularList";
 import { people } from "./people/people";
-import { SmallPersonListItem } from './people/SmallPersonListItems';
-import { LargePersonListItem } from './people/LargePersonListItems';
+import { SmallPersonListItem } from './people/SmallPersonListItem';
+import { LargePersonListItem } from './people/LargePersonListItem';
 import { products } from "./products/products";
-import { SmallProductListItem } from "./products/SmallProductListItems";
-import { LargeProductListItem } from "./products/LargeProductListItems";
+import { SmallProductListItem } from "./products/SmallProductListItem";
+import { LargeProductListItem } from "./products/LargeProductListItem";
 import { NumberedList } from "./layout-components/NumberedList";
 import { Modal } from "./layout-components/Modal";
 
@@ -20,6 +20,7 @@ const RighttHandComponent = ({message}: {message: string}) => {
     return <p style={{backgroundColor: 'pink'}}>{message}</p>
 }
 
+// SplitScreens:
 // 1st: 2 components as params
 // 2nd: 2 components as children
 // 3rd: my plus - any number of components as children + weights in an array
@@ -40,7 +41,7 @@ function LayoutComponents() {
                 left={LeftHandComponent}
                 right={RighttHandComponent}
                 leftWeight={2}
-                rightWeight={5}
+                rightWeight={7}
                 leftProp="John"
                 rightProp="Today is Friday"/>
 

@@ -19,6 +19,7 @@ const ModalBody = styled.div`
     padding: 20px;
     width: 50%;
     border-radius: 10px;
+    text-align: center;
 `;
 
 // This Modal is Uncontrolled... no parent can manipulate it...

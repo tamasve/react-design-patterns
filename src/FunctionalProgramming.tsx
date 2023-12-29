@@ -26,6 +26,7 @@ const nestedObject: object = {
 export default function FunctionalProgramming () {
     return (
         <>
+            <h2>Functional programming</h2>
             <RecursiveComponent data={nestedObject} />
             <Button size='large' bcolor='black' text="It is the base Button..." color="yellow"/>
             <RedButton text="Composition from Button" color="white"/>
